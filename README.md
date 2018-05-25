@@ -9,7 +9,7 @@
 -->
 
 ```bash
-git clone git@github.com:casfisica/VLF_SignalGenerator.git -b mg261
+git clone git@github.com:casfisica/VLF_SignalGenerator.git -b mg262
 cd VLF_SignalGenerator
 ```
 
@@ -48,7 +48,7 @@ source ./CONFIGNEWFORTRAN.sh
 ```bash
 PATHCAS="$(pwd)"
 #git clone git@github.com:cms-sw/genproductions.git genproductions
-git clone git@github.com:cms-sw/genproductions.git genproductions -b mg26x
+git clone git@github.com:cms-sw/genproductions.git genproductions -b mg261
 ```
 <par>Then you should copy a modyfy 'gridpack_generation.sh' to the 'PATH/genproductions/bin/MadGraph5_aMCatNLO/' folder</par>
 
