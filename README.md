@@ -59,7 +59,7 @@ git clone git@github.com:cms-sw/genproductions.git genproductions -b mg26x
 cp $PATHCAS/gridpack_generation_6_2_x.sh $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
 #cp $PATHCAS/gridpack_generation_4_2_x.sh $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
 cd $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/
-./gridpack_generation.sh FFllUpTo3j_TauAndMuonDecays ../../../Model/ local 2>> error.log 1>> output.log
+./gridpack_generation.sh FFllUpTo3j_TauAndMuonDecays ../../../Model/ local 2>> error.log 1>> output.log &
 ```
 
 <par>To see the progres</par>
