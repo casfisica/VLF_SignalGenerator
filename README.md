@@ -57,7 +57,7 @@ git clone git@github.com:cms-sw/genproductions.git genproductions -b mg26x
 
 ```bash
 cd $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/
-eval "cat gridpack_generation.sh  | sed '/wget --no-check-certificate https/c\            cp $PATHCAS\/Model\/\$model.tar .\/'> gridpack_generation.sh "
+eval "cat gridpack_generation.sh  | sed '/wget --no-check-certificate https/c\            cp $PATHCAS\/Model\/\$model .\/'> gridpack_generation.sh "
 ./gridpack_generation.sh FFllUpTo3j_TauAndMuonDecays ../../../Model/ local 2>> error.log 1>> output.log &
 ```
 
