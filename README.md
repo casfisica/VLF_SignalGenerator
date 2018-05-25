@@ -16,10 +16,8 @@ cd VLF_SignalGenerator
 <par>First you have to use your own version of gcc compilers [MyOwnVersionOfGCC_LXPLUS](https://github.com/casfisica/MyOwnVersionOfGCC_LXPLUS.git)</par>
 
 ```bash
-#wget http://gfortran.meteodat.ch/download/x86_64/snapshots/gcc-4.9-20160803.tar.xz
-wget http://gfortran.meteodat.ch/download/x86_64/snapshots/gcc-9.tar.xz
-#tar xvf gcc-4.9-20160803.tar.xz
-tar xvf gcc-9.tar.xz
+wget http://gfortran.meteodat.ch/download/x86_64/snapshots/gcc-9-20180520.tar.xz
+tar xvf gcc-9-20180520.tar.xz
 NEWFORTRANPATH="$(pwd)"
 
 cat <<EOT >> CONFIGNEWFORTRAN.sh 
