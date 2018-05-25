@@ -9,9 +9,8 @@
 -->
 
 ```bash
-git clone git@github.com:casfisica/VLF_SignalGenerator.git
+git clone git@github.com:casfisica/VLF_SignalGenerator.git -b mg261
 cd VLF_SignalGenerator
-git checkout mg26x
 ```
 
 <par>First you have to use your own version of gcc compilers [MyOwnVersionOfGCC_LXPLUS](https://github.com/casfisica/MyOwnVersionOfGCC_LXPLUS.git)</par>
