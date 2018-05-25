@@ -59,13 +59,21 @@ git clone git@github.com:cms-sw/genproductions.git genproductions -b mg26x
 cp $PATHCAS/gridpack_generation_6_2_x.sh $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
 #cp $PATHCAS/gridpack_generation_4_2_x.sh $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
 cd $PATHCAS/genproductions/bin/MadGraph5_aMCatNLO/
-./gridpack_generation.sh FFllUpTo3j_TauAndMuonDecays ../../../Model/ local
+./gridpack_generation.sh FFllUpTo3j_TauAndMuonDecays ../../../Model/ local 2>> error.log 1>> output.log
 ```
 
 <par>To see the progres</par>
 
 ```bash
 tail -f FFllUpTo3j_TauAndMuonDecays.log 
+
 ```
+
+<par>or </par>
+```bash
+tail -f output.log 
+
+```
+
 
 <par> Note: the output directory specified in the *_proc_card.dat should match the name of the process as used in the gridpack_generation.sh script. In this example, as you see from the last line, we are launching the jobs onto the 1nd queue (CPU limit one day). For complicated processes (e.g. W+jets), please consider using a queue with a longer CPU limit (e.g. 1nw, which has a CPU limit of one week). The queue parameter is optional, if it is not provided, then all jobs run locally (multicore). for more information go  [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO) </par>
